@@ -1,0 +1,96 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+}
+main {
+    width: 80%;
+    max-width: 550px;
+    margin: 10vh auto;
+    height: 100%;
+}
+span#entarRegistrar {
+    display: block;
+    margin-bottom: 5rem;
+    border-bottom: 0.2rem solid #EFEFEF;
+}
+.inpt_for_logres {
+    padding: 0.5rem 0.7rem;
+	outline: none;
+	border: none;
+    background-color: transparent;
+}
+
+.inpt_for_logres:focus {
+    border-bottom: 0.2em solid rgb(25, 23, 168);
+    transition-duration: 300ms;
+}
+
+input {
+    background-color: #EFEFEF;
+    outline: none;
+    border: none;
+}
+span#facebook_Google {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+#inptLogarFacebook{
+    background-color: rgb(55, 55, 255);
+    color: seashell;
+}
+#inptLogarGoogle {
+    color: rgb(7, 7, 7);
+ }
+ .loginsAlternativo {
+     min-width: 100px;
+     width:47% ;
+     padding: 0.5em ;
+     box-shadow: 0.1rem 0.1rem 5px rgba(0, 0, 0, 0.555);
+ }
+
+ p {
+     color: rgb(99, 97, 97);
+     text-align: center;
+     font-size: 0.9em;
+ }
+ form, fieldset {
+     padding: 0;
+     border: none;
+     
+     display: flex;
+    }
+    
+    fieldset{
+    flex-direction: column;
+    flex-grow: 1;
+ }
+
+fieldset > input {
+    padding: 1rem;
+}
+
+ fieldset > a {
+     text-align: end;
+     font-size: 0.7em;
+     color: #f7a92c;
+ } 
+ fieldset > a:hover {
+    color: #be8324;
+ }
+.bttnLogRes {
+    margin-bottom: 0;
+    font-size: 1.02em;
+    color: blanchedalmond;
+    background-color: #f7a21b;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+}
+.bttnLogRes:hover {
+    background-color: #fda413;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.459);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registrar</title>
+</head>
+
+<body>
+    <main>
+        <span><input type="button" id="inpt-for-login" class="inpt-for-logres" value="Login">|<input type="button"
+                id="inpt-for-registro" class="inpt-for-logres" value="registrar"></span><br>
+                <a href="#"><img src="#"> Entrar com Facebook</a>  <a href="#"><img src="#"> Entrar com Google</a>
+                <p>ou conectar-se com seu email</p>
+                <form method="post" action="registro_usuarios.php">
+                    <fieldset>
+                        <label>Email</label><br>
+                        <input type="email" name="email" id="email-user" placeholder="Email ou Usuário" required><br>
+        
+                        <label>Senha</label><br>
+                        <input type="password" name="password" id="password-user" placeholder="Senha" required><br>
+        
+                        <input type="checkbox" id="S-visivel">
+                        <label>Mostrar senha</label><br>
+        
+                        <input type="submit" class="BLogRes" value="Entrar" onclick="logar()"><br>
+                        <a href="#">Esqueci minha Senha</a>
+                    </fieldset>
+                </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
