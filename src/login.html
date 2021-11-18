@@ -17,11 +17,13 @@
         </span><br>
         <div class="login-registro" id="login">
             <span id="facebook_Google">
-                <a href="#" id="inptLogarFacebook" class="loginsAlternativo"><img src="#"> Entrar com Facebook</a>
-                <a href="#" id="inptLogarGoogle" class="loginsAlternativo"><img src="#"> Entrar com Google</a>
+                <a href="#" id="inptLogarFacebook" class="loginsAlternativo"><img
+                        src="../imagens/icons8-facebook-num-círculo.svg" class="logoFacebook"> Entrar com Facebook</a>
+                <a href="#" id="inptLogarGoogle" class="loginsAlternativo"><img src="../imagens/Google__G__Logo.svg"
+                        class="logoGoogle"> Entrar com Google</a>
             </span>
             <p>ou conectar-se com seu Email</p>
-            <form method="post" action="registro_usuarios.php">
+            <form method="post" action=""><!-- local para onde os dados inseridos devem ser enviados. Exemplo: action="registro.php" -->
                 <fieldset>
                     <input type="email" name="email" id="email-user" placeholder="   Email ou Usuário" required><br>
 
@@ -34,26 +36,19 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
         <div class="login-registro" id="registro">
             <span id="facebook_Google">
-                <a href="#" id="inptLogarFacebook" class="loginsAlternativo"><img src="#"> Cadastre-se com Facebook</a>
-                <a href="#" id="inptLogarGoogle" class="loginsAlternativo"><img src="#"> Cadastre-se com Google</a>
+                <a href="#" id="inptLogarFacebook" class="loginsAlternativo"><img
+                        src="../imagens/icons8-facebook-num-círculo.svg" class="logoFacebook"> Cadastre-se com
+                    Facebook</a>
+                <a href="#" id="inptLogarGoogle" class="loginsAlternativo"><img src="../imagens/Google__G__Logo.svg"
+                        class="logoGoogle"> cadastre-se com Google</a>
             </span>
             <p>ou conectar-se com seu Email</p>
             <form>
                 <fieldset>
+                    <input type="text" name="full_name" id="full_name" placeholder="   Nome e Sobrenome" required><br>
                     <input type="email" name="email" id="email-user" placeholder="   Email ou Usuário" required><br>
-
                     <input type="password" name="password" id="password-user" placeholder="   Senha" required><br>
 
                     <nobr>
@@ -63,8 +58,8 @@
 
 
                     <nobr>
-                        <input type="checkbox" name="checkTermos" id="checkTermos" required>
-                        <label for="checkTermos">Li e aceito os termos e politica</label>
+                        <input type="checkbox" name="checkTermos" id="lembrar-me" required checked>
+                        <label for="checkTermos">Lembre-me</label>
                     </nobr>
 
                     <input type="submit" class="bttnLogRes" value="criar nova conta agora" onclick="logar()"><br>

@@ -11,26 +11,32 @@
 
 <body>
     <main>
-        <span><input type="button" id="inpt-for-login" class="inpt-for-logres" value="Login">|<input type="button"
-                id="inpt-for-registro" class="inpt-for-logres" value="registrar"></span><br>
-                <a href="#"><img src="#"> Entrar com Facebook</a>  <a href="#"><img src="#"> Entrar com Google</a>
-                <p>ou conectar-se com seu email</p>
-                <form method="post" action="registro_usuarios.php">
-                    <fieldset>
-                        <label>Email</label><br>
-                        <input type="email" name="email" id="email-user" placeholder="Email ou Usuário" required><br>
-        
-                        <label>Senha</label><br>
-                        <input type="password" name="password" id="password-user" placeholder="Senha" required><br>
-        
-                        <input type="checkbox" id="S-visivel">
-                        <label>Mostrar senha</label><br>
-        
-                        <input type="submit" class="BLogRes" value="Entrar" onclick="logar()"><br>
-                        <a href="#">Esqueci minha Senha</a>
-                    </fieldset>
-                </form>
-    </main>
+            <span id="facebook_Google">
+                <a href="#" id="inptLogarFacebook" class="loginsAlternativo"><img src=""> Cadastre-se com Facebook</a>
+                <a href="#" id="inptLogarGoogle" class="loginsAlternativo"><img src="#"> Cadastre-se com Google</a>
+            </span>
+            <p>ou conectar-se com seu Email</p>
+            <form>
+                <fieldset>
+                    <input type="text" name="full_name" id="full_name" placeholder="   Nome e Sobrenome" required><br>
+                    <input type="email" name="email" id="email-user" placeholder="   Email ou Usuário" required><br>
+                    <input type="password" name="password" id="password-user" placeholder="   Senha" required><br>
+
+                    <nobr>
+                        <input type="checkbox" name="inptTermos" id="inptTermos" required>
+                        <label for="inptTermos">Li e aceito os termos e politica</label>
+                    </nobr>
+
+
+                    <nobr>
+                        <input type="checkbox" name="checkTermos" id="checkTermos" required>
+                        <label for="checkTermos">Li e aceito os termos e politica</label>
+                    </nobr>
+
+                    <input type="submit" class="bttnLogRes" value="criar nova conta agora" onclick="logar()"><br>
+                    <a href="#">Esqueci minha Senha</a>
+                </fieldset>
+            </form>
     <script src="main.js"></script>
 </body>
 

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Assistant, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
+    border-radius: 5px;
 }
 body {
     display: flex;
@@ -23,10 +25,11 @@ span#entarRegistrar {
 	outline: none;
 	border: none;
     background-color: transparent;
+    border-radius: 0px;
 }
 
 .inpt_for_logres:focus {
-    border-bottom: 0.2em solid rgb(25, 23, 168);
+    border-bottom: 0.2em solid rgb(23, 118, 131);
     transition-duration: 300ms;
 }
 
@@ -34,6 +37,7 @@ input {
     background-color: #EFEFEF;
     outline: none;
     border: none;
+    border-radius: 5px;
 }
 span#facebook_Google {
     display: flex;
@@ -41,35 +45,45 @@ span#facebook_Google {
     justify-content: space-between;
 }
 #inptLogarFacebook{
-    background-color: rgb(55, 55, 255);
-    color: seashell;
+    background-color: #4267B2;
+    color: rgb(250, 250, 250);
 }
 #inptLogarGoogle {
     color: rgb(7, 7, 7);
- }
- .loginsAlternativo {
-     min-width: 100px;
-     width:47% ;
-     padding: 0.5em ;
-     box-shadow: 0.1rem 0.1rem 5px rgba(0, 0, 0, 0.555);
- }
+}
+.loginsAlternativo {
+    min-width: 100px;
+    width:47% ;
+    padding: 0.7em ;
+    font-size: 0.9em;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0.1rem 0.1rem 5px rgba(0, 0, 0, 0.555);
+}
+.logoFacebook, .logoGoogle {
+    width: 1em;
+    margin-bottom: -0.2em;
+}
+.logoFacebook {
+    width: 1.2em;
+}
 
- p {
-     color: rgb(99, 97, 97);
-     text-align: center;
-     font-size: 0.9em;
- }
- form, fieldset {
-     padding: 0;
-     border: none;
-     
+p {
+    color: rgb(99, 97, 97);
+    text-align: center;
+    font-size: 0.9em;
+}
+form, fieldset {
+    padding: 0;
+    border: none;
+    
      display: flex;
     }
     
     fieldset{
     flex-direction: column;
     flex-grow: 1;
- }
+}
 
 fieldset > input {
     padding: 1rem;
@@ -81,16 +95,20 @@ fieldset > input {
      color: #f7a92c;
  } 
  fieldset > a:hover {
-    color: #be8324;
- }
-.bttnLogRes {
-    margin-bottom: 0;
-    font-size: 1.02em;
-    color: blanchedalmond;
-    background-color: #f7a21b;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+     color: #be8324;
+    }
+    nobr > label {
+        font-size: 0.9rem;
+        color: rgb(53, 52, 52);
+    }
+    .bttnLogRes {
+        margin-bottom: 0;
+        font-size: 1.02em;
+        color: blanchedalmond;
+        background-color: #f79b09;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
 }
 .bttnLogRes:hover {
-    background-color: #fda413;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.459);
+    background-color: #ff9d00;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.26);
 }
