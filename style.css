@@ -16,7 +16,7 @@ main {
     height: 100%;
 }
 span#entarRegistrar {
-    display: block;
+    display: flex;
     margin-bottom: 5rem;
     border-bottom: 0.2rem solid #EFEFEF;
 }
@@ -26,10 +26,11 @@ span#entarRegistrar {
 	border: none;
     background-color: transparent;
     border-radius: 0px;
+    margin-bottom: -0.2rem;
 }
 
 .inpt_for_logres:focus {
-    border-bottom: 0.2em solid rgb(23, 118, 131);
+    border-bottom: 0.23em solid rgba(23, 118, 131, 0.705);
     transition-duration: 300ms;
 }
 
@@ -89,12 +90,12 @@ fieldset > input {
     padding: 1rem;
 }
 
- fieldset > a {
+a.links {
      text-align: end;
-     font-size: 0.7em;
+     font-size: 0.9em;
      color: #f7a92c;
  } 
- fieldset > a:hover {
+a.links:hover {
      color: #be8324;
     }
     nobr > label {
@@ -106,9 +107,10 @@ fieldset > input {
         font-size: 1.02em;
         color: blanchedalmond;
         background-color: #f79b09;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+        margin-top: 00.5rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.219);
 }
 .bttnLogRes:hover {
     background-color: #ff9d00;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.26);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
 }

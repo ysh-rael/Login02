@@ -23,14 +23,15 @@
                         class="logoGoogle"> Entrar com Google</a>
             </span>
             <p>ou conectar-se com seu Email</p>
-            <form method="post" action=""><!-- local para onde os dados inseridos devem ser enviados. Exemplo: action="registro.php" -->
+            <form method="post" action="">
+                <!-- local para onde os dados inseridos devem ser enviados. Exemplo: action="registro.php" -->
                 <fieldset>
                     <input type="email" name="email" id="email-user" placeholder="   Email ou Usuário" required><br>
 
                     <input type="password" name="password" id="password-user" placeholder="   Senha" required><br>
 
                     <input type="submit" class="bttnLogRes" value="Entrar" onclick="logar()"><br>
-                    <a href="#">Esqueci minha Senha</a>
+                    <a class="links" href="#">Esqueci minha Senha</a>
                 </fieldset>
             </form>
         </div>
@@ -49,21 +50,25 @@
                 <fieldset>
                     <input type="text" name="full_name" id="full_name" placeholder="   Nome e Sobrenome" required><br>
                     <input type="email" name="email" id="email-user" placeholder="   Email ou Usuário" required><br>
-                    <input type="password" name="password" id="password-user" placeholder="   Senha" required><br>
+                    <input type="password" name="password" id="password-user"
+                        placeholder="   Senha   Mínimo 8 caracteres" required minlength="8"><br>
 
                     <nobr>
                         <input type="checkbox" name="inptTermos" id="inptTermos" required>
-                        <label for="inptTermos">Li e aceito os termos e politica</label>
+                        <label for="inptTermos">Li e aceito os
+                            <a class="links" href="">termos</a> e
+                            <a class="links" href="">politica</a>
+                        </label>
                     </nobr>
 
 
                     <nobr>
-                        <input type="checkbox" name="checkTermos" id="lembrar-me" required checked>
+                        <input type="checkbox" name="checkTermos" id="lembrar-me" checked>
                         <label for="checkTermos">Lembre-me</label>
                     </nobr>
 
                     <input type="submit" class="bttnLogRes" value="criar nova conta agora" onclick="logar()"><br>
-                    <a href="#">Esqueci minha Senha</a>
+                    <a class="links" href="#">Esqueci minha Senha</a>
                 </fieldset>
             </form>
     </main>
