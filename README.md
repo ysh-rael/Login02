@@ -1,10 +1,11 @@
 # Página de Login e cadastro
+
 * Responsiva
 * Harmonia visual
 * Login com Facebook/Google
 * Alteração dinâmica entre "Entrar" e "Registrar" com JavaScript não sendo preciso desviar o usuário para uma nova página.
+---
+[![_login02](https://user-images.githubusercontent.com/79410863/144301363-bc240296-2785-434f-af76-c0892edd91a4.png)](https://ysh-rael.github.io/Login02/)
 
-![Kazam_screenshot_00001](https://user-images.githubusercontent.com/79410863/144285352-d1feb117-b294-4d5a-bdbe-cd0129bf154a.png)
-<img style="width=160px; height: 400px" src="https://user-images.githubusercontent.com/79410863/142345407-e90ddd87-8f43-4402-a3c6-c346f008222d.jpeg"> 
+<a style="font-size:50px" href="https://ysh-rael.github.io/Login02/" target="_blank">Visualizar Página de Login</a>
 
-[Visualizar página de login](https://ysh-rael.github.io/Login02/) 
